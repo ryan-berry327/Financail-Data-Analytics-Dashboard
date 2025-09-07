@@ -81,7 +81,7 @@ fig_dd = px.area(df_port.loc[mask_port], x="Date", y="portfolio_drawdown",
 st.plotly_chart(fig_dd, use_container_width=True)
 
 # Rolling Volatility
-st.subheader("📊 Portfolio Rolling Volatility (30d, Annualised)")
+st.subheader("Portfolio Rolling Volatility (30d, Annualised)")
 fig_vol = px.line(df_port.loc[mask_port], x="Date", y="portfolio_vol_30d",
                   labels={"portfolio_vol_30d": "Volatility"})
 st.plotly_chart(fig_vol, use_container_width=True)
